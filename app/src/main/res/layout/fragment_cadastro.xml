@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:backgroundTint="#03A9F4"
+    android:foregroundTint="#03A9F4"
+    android:orientation="vertical"
+    tools:context=".view.CadastroFragment">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/logosemfundo" />
+
+    <TextView
+        android:id="@+id/tvCadastoNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etCadastroNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvCadastroCargaHoraria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carga Horária"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etCadastroCargaHoraria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tvCadastroConceito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conceito"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etCadastroConceito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvCadastroTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/rgCadastroTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbCadastroTecnologo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tecnólogo"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbCadastroBacharelado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bacharelado"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbCadastroLicenciatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Licenciatura"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btCadastroSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar" />
+
+    <Button
+        android:id="@+id/btCadastroCancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar" />
+
+
+</LinearLayout>
